@@ -1,7 +1,7 @@
-package org.example.homeTasks.eight;
+package org.example.homeTasks.eight.two;
 
 public enum Time {
-    BREAKFEAST("This is time for breakfeast"),
+    BREAKFAST("This is time for breakfast"),
     LUNCH("This is time for lunch"),
     DINNER("This is time for dinner");
     final String time;
@@ -12,3 +12,4 @@ public enum Time {
         return time;
     }
 }
+

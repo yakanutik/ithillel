@@ -1,24 +1,25 @@
-package org.example.homeTasks.eight;
+package org.example.homeTasks.eight.three;
 
 public enum Calculat {
-    DIVISION{
+    DIVISION {
         @Override
         public int action(int a, int b) {
             if (b == 0) {
                 throw new ArithmeticException("Cannot divide by zero!");
             }
-            return  a / b;
+            return a / b;
         }
     },
-    EXPON{
+    EXPON {
         @Override
         public int action(int a, int b) {
-            int a1=a;
-          for (int i=1; i<b; i++){
-              a=a1*a;
+            int a1 = a;
+            for (int i = 1; i < b; i++) {
+                a = a1 * a;
             }
-          return a;
+            return a;
         }
     };
-    public abstract int action (int a, int b);
+
+    public abstract int action(int a, int b);
 }
