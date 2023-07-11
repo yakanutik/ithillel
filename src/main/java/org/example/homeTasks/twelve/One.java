@@ -35,6 +35,6 @@ public class One {
     }
 
     public static <T> void acceptCollection(T collection) {
-        System.out.println("Collection type accepted: " + collection.getClass());
+        System.out.println("Collection type is: " + collection.getClass().getSimpleName());
     }
 }
